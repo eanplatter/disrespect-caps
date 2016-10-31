@@ -15,6 +15,7 @@
     "release:minor": "npm run build && npm version minor && npm publish && git push --follow-tags",
     "release:major": "npm run build && npm version major && npm publish && git push --follow-tags"
   },
+  "repository": "https://github.com/eanplatter/disrespect-caps",
   "author": "Ean",
   "license": "MIT",
   "devDependencies": {
