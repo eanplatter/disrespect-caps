@@ -1,7 +1,9 @@
-export default function(src, target) {
-  if (src.length !== target.length) return false;
-  const tArray = target.split('');
-  const filtered = tArray.filter((l, i) => {
+// @flow
+
+export default function(src: string, target: string): boolean {
+  if (src.length !== target.length) return false
+  const tArray: string[] = target.split('')
+  const filtered: string[] = tArray.filter((l: string, i: number) => {
     if (src[i] === l) {
       return l
     } else if (src[i] === l.toUpperCase()) {
