@@ -1,6 +1,6 @@
 {
   "name": "disrespect-caps",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Essentially makes Yes === yes or yEs === yes",
   "main": "index.js",
   "scripts": {
