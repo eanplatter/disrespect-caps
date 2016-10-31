@@ -1,0 +1,25 @@
+{
+  "name": "argument-validator",
+  "version": "0.0.1",
+  "description": "Essentially makes Yes === yes or yEs === yes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src/ -d bin",
+    "dev": "nodemon --exec \"npm start --silent\" --watch src/",
+    "prebuild": "rimraf bin",
+    "prestart": "npm run build --silent",
+    "start": "node bin/index.js",
+    "release:patch": "npm run build && npm version patch && npm publish && git push --follow-tags",
+    "release:minor": "npm run build && npm version minor && npm publish && git push --follow-tags",
+    "release:major": "npm run build && npm version major && npm publish && git push --follow-tags"
+  },
+  "author": "Ean",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-1": "^6.16.0"
+  }
+}
