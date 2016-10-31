@@ -1,12 +1,10 @@
 // @flow
 
-export default function(src: string, target: string): boolean {
+export default function(src: string, target: string) {
   if (src.length !== target.length) return false
-  const tArray: string[] = target.split('')
-  const filtered: string[] = tArray.filter((l: string, i: number) => {
-    if (src[i] === l) {
-      return l
-    } else if (src[i] === l.toUpperCase()) {
+  const tArray = target.split('')
+  const filtered = tArray.filter((l, i) => {
+    if (src[i].toUpperCase() === l.toUpperCase()) {
       return l
     }
   })

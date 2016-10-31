@@ -2,7 +2,7 @@
   "name": "disrespect-caps",
   "version": "0.0.3",
   "description": "Essentially makes Yes === yes or yEs === yes",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel src/ -d dist",
@@ -15,7 +15,10 @@
     "release:minor": "npm run build && npm version minor && npm publish && git push --follow-tags",
     "release:major": "npm run build && npm version major && npm publish && git push --follow-tags"
   },
-  "repository": "https://github.com/eanplatter/disrespect-caps",
+  "repository": {
+    "url": "git@github.com:eanplatter/disrespect-caps.git",
+    "type": "git"
+  },
   "author": "Ean",
   "license": "MIT",
   "devDependencies": {
