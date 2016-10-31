@@ -1,5 +1,5 @@
 {
-  "name": "argument-validator",
+  "name": "disrespect-caps",
   "version": "0.0.1",
   "description": "Essentially makes Yes === yes or yEs === yes",
   "main": "index.js",
