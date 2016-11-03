@@ -1,6 +1,6 @@
 # Disrespect Caps
 
-An easy way to check if 'Yes' === 'yes'.
+An easy way to check if "YeS" === "yes".
 
 ## Usage:
 `$ npm i --save disrespect-caps`
