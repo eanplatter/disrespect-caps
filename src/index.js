@@ -1,4 +1,4 @@
-// @flow
+// @flow 
 export default function(src: string, target: string) {
   if (src.length !== target.length) return false
   const tArray = target.split('')
